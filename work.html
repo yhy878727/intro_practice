@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portfolio of Nina Huang: clinical nursing, medical AI services, and health data research, with a focus on healthcare product and engineering work.">
+  <title>Projects | Healthcare × Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="v3007">
+  <div id="top">
+    <header class="siteheader">
+      <a class="brand" href="index.html"><span class="dot"></span><small>HEALTHCARE × TECH</small><span class="brand-sep" aria-hidden="true">|</span><span class="brand-name">Nina Huang</span></a>
+    </header>
+    <main>
+      <section class="section projects-section" id="projects">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow">Projects</div>
+            <h1>From insight.<br>To impact.</h1>
+          </div>
+          <p>From service operations to research,<br>each built on a healthcare need.</p>
+        </div>
+        <div class="projects projects-two">
+          <article class="project">
+            <div class="meta"><span>01</span><span>PROFESSIONAL EXPERIENCE</span>
+            </div>
+            <div class="visual">
+              <img class="project-art" src="assets/project-service-operations.jpg" width="2576" height="1438" alt="Illustration of a service operations guide listing user onboarding, service workflow, and knowledge sharing." loading="lazy" decoding="async">
+            </div>
+            <h3>Medical AI service workflows</h3>
+            <p>Organizing scattered service information into onboarding guides and multilingual FAQs, so users can start and use a medical AI service.</p>
+            <p class="focus" style="font-size:10px;color:var(--teal);margin-top:18px">Cross-team communication · User needs · Process design</p><button class="read" type="button" data-dialog="project-1">View details <span>↗</span></button>
+          </article>
+          <article class="project">
+            <div class="meta"><span>02</span><span>RESEARCH / IN PROGRESS</span>
+            </div>
+            <div class="visual">
+              <img class="project-art" src="assets/project-device-reading.jpg" width="2576" height="1232" alt="Illustration of a device screen showing a heart-rate trace, HR 72 and SpO₂ 98, with the steps image, model, structured data." loading="lazy" decoding="async">
+            </div>
+            <h3>Reading medical device screens</h3>
+            <p>Using multimodal models to read medical device screens, so a photo of a monitor can become structured data.</p>
+            <p class="focus" style="font-size:10px;color:var(--teal);margin-top:18px">User needs · Error cases · Evaluation</p><button class="read" type="button" data-dialog="project-2">View details <span>↗</span></button>
+          </article>
+        </div>
+      </section>
+      <nav class="page-crosslink" aria-label="Page navigation">
+        <a class="back-home" href="index.html"><span class="crosslink-arrow" aria-hidden="true">←</span><span>BACK HOME</span></a>
+        <a href="about.html"><span>ABOUT ME</span><span class="crosslink-arrow" aria-hidden="true">↗</span></a>
+      </nav>
+      <section class="contact" id="contact">
+        <div>
+          <div class="eyebrow">Get in touch</div>
+          <h2>Let’s build better health tech for better care.</h2>
+          <p>I am interested in healthcare workflows, user needs, and AI projects.</p>
+        </div>
+        <div>
+          <a class="btn" href="#contact" data-contact aria-label="Email Nina">Contact <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <!-- Project 1 details -->
+  <dialog id="project-1" aria-labelledby="project-1-title"><button class="close" type="button" aria-label="Close dialog">×</button>
+    <div class="dialog-body">
+      <div class="eyebrow">PROFESSIONAL EXPERIENCE</div>
+      <h2 id="project-1-title">Medical AI service workflows</h2>
+      <p style="margin-top:16px">Clinics in several countries were starting to use an AI-ECG service. Service information was scattered, which made onboarding and support harder.</p>
+      <h3>My approach</h3>
+      <p>As Service Team Manager, I organized onboarding steps into guides, wrote multilingual FAQs, and revised the team’s workflows and guidelines. I also passed user feedback to the product team, which led to features such as real-time alerts and downloadable reports.</p>
+      <h3>Outputs</h3>
+      <p>Quick Start guides, multilingual FAQs, a Service Playbook, and training for new team members. Communication within the team and with customers became more efficient.</p>
+    </div>
+  </dialog>
+  <!-- Project 2 details -->
+  <dialog id="project-2" aria-labelledby="project-2-title"><button class="close" type="button" aria-label="Close dialog">×</button>
+    <div class="dialog-body">
+      <div class="eyebrow">RESEARCH / IN PROGRESS</div>
+      <h2 id="project-2-title">Reading medical device screens</h2>
+      <p style="margin-top:16px">Medical device screens show many values at once, which makes them hard to record by hand. The text is small, units vary, and layouts differ across devices, so a model has to identify the device and match each value to the right field.</p>
+      <h3>My approach</h3>
+      <p>I am comparing local multimodal models, which can run without sending patient images off-site. Next, I plan to fine-tune the best candidate with LoRA and design an evaluation for each step.</p>
+      <h3>Outputs</h3>
+      <p>Planned: an evaluation of device identification, value extraction, and structured data output.</p>
+    </div>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>

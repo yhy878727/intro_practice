@@ -1,4 +1,4 @@
-// Small behaviors only. All page text lives in the HTML files.
+// All page text  in the HTML files.
 
 // Project details: each "View project" button opens the <dialog> named in data-dialog.
 document.querySelectorAll('[data-dialog]').forEach((button) => {
